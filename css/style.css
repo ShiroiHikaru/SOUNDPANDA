@@ -78,8 +78,47 @@ strong{
 .box .search{
     width: 715px;
     height: 50px;
-    border: 1px solid red;
+    border: 1px solid #333;
+    border-bottom: 3px solid #333;
     position: absolute;
     bottom: 20px;
     left: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 검색창 */
+.box .search input{
+    width: 600px;
+    height: 50px;
+    border: none;
+    font-size: 15px;
+}
+
+/* 검색버튼 */
+.box .search button{
+    width: 110px;
+    height: 50px;
+    background: url(../img/click_btn.jpg) no-repeat;
+    background-position: center;
+    color: #fff;
+    font-size: 15px;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+/* 카테고리 선택 */
+.categori{
+    width: 715px;
+    height: 50px;
+    border: 1px solid red;
+    position: absolute;
+    left: 35px;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.categori .goods{
+    
 }
