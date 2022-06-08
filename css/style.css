@@ -57,6 +57,10 @@ strong{
     position: relative;
 }
 
+.box .tab_area{
+    height: 220px;
+}
+
 .box .section .question{
     width: 95%;
     height: 40px;
@@ -110,7 +114,7 @@ strong{
     cursor: pointer;
 }
 
-/* 카테고리 선택 */
+/* 카테고리 공통영역 */
 .categori{
     width: 715px;
     height: 50px;
@@ -122,6 +126,7 @@ strong{
     font-size: 15px;
 }
 
+/* 카테고리 항목선택 */
 .categori .goods .listup{
     border-width: 1px 1px 3px 1px;
     border-style: solid;
@@ -168,3 +173,30 @@ strong{
     border-bottom: 1px solid #333;
     padding-left: 10px;
 }
+
+/* 제품타입선택 */
+.categori .goods .type{
+    width: 715px;
+    height: 95px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.categori .goods .type li{
+    width: 125px;
+    border: 1px solid #333;
+    border-radius: 50px;
+    font-size: 15px;
+    float: left;
+    padding: 5px;
+    margin: 0px 5px 5px 0px;
+    text-align: center;
+}
+
+.categori .goods .type li:hover{
+    background: #333;
+    color: #fff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
