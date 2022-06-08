@@ -10,6 +10,8 @@ body{
     max-width: 100vw;
     max-height: 100vh;
     font-family: 'nanumsquare';
+    width: 100%;
+    height: 100%;
 }
 
 ul li{
@@ -78,8 +80,9 @@ strong{
 .box .search{
     width: 715px;
     height: 50px;
-    border: 1px solid #333;
-    border-bottom: 3px solid #333;
+    border-width: 1px 1px 3px 1px;
+    border-style: solid;
+    border-color: #333;
     position: absolute;
     bottom: 20px;
     left: 35px;
@@ -111,14 +114,57 @@ strong{
 .categori{
     width: 715px;
     height: 50px;
-    border: 1px solid red;
     position: absolute;
     left: 35px;
     bottom: 20px;
     display: flex;
     justify-content: space-between;
+    font-size: 15px;
 }
 
-.categori .goods{
-    
+.categori .goods .listup{
+    border-width: 1px 1px 3px 1px;
+    border-style: solid;
+    border-color: #333;
+}
+
+.categori .goods .listup{
+    width: 230px;
+    height: 50px;
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    line-height: 50px;
+    font-weight: bold;
+}
+
+.categori .goods .listup::after{
+    content: "▼";
+    background: #333;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    margin-left: 10px;
+}
+
+.categori .goods .hidden_list{
+    background: #fff;
+    width: 230px;
+    height: 60px;
+    border: 1px solid #333;
+    overflow-y: scroll;
+    display: none;
+}
+
+.categori .goods .hidden_list li{
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #333;
+    padding-left: 10px;
 }
