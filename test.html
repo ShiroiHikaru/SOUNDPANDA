@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1440px;
+            border: 1px solid red;
+            margin: auto;
+            position: relative;
+        }
+
+        ul li{
+            list-style: none;
+        }
+
+        .categori_tab{
+            background-color: #ccc;
+            width: 300px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            position: absolute;
+            right: 0;
+        }
+
+        .categori_tab li{
+            width: calc(300px/3);
+            text-align: center;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 전체 카테고리 항목(클릭 시 하위 메뉴 변경) -->
+    <ul class="categori_tab">
+        <li>전체</li>
+        <li>사운드판다</li>
+        <li>판다지아</li>
+    </ul>
+</body>
+</html>
