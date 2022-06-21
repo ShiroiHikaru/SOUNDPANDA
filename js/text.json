@@ -1,41 +1,38 @@
 {
-    "earphone":[
-        {
-            "subject": "게이밍이어폰",
-            "goods":["G9","G9Plus","G9Light"],
-            "err": ["사운드","마이크"]
-        } 
+    "category":[
+        {"01": "게이밍이어폰"},
+        {"02": "모기퇴치기"},
+        {"03": "블루투스마이크"},
+        {"04": "미러볼"},
+        {"05": "블루투스스피커"} 
     ],
 
-    "mosquito":[
-        {
-            "subject": "모기퇴치기",
-            "goods": ["M9","M10"],
-            "err": "작동"
-        }
+    "earphone":[
+        {"ear01":"G9"},
+        {"ear02":"G9Plus"},
+        {"ear03":"G9Light"}
     ],
     
-    "mic":[
-        {
-            "subject": "블루투스마이크",
-            "goods": "Musing",
-            "err": ["작동", "소음"]
-        }
+    "mosquito":[
+        {"mogi01":"M9"},
+        {"mogi02":"M10"}
     ],
 
-    "mirror":[
-        {
-            "subject": "미러볼",
-            "goods": "SNP-3000",
-            "errCode": "작동"
-        }
+    "mic":"Musing",
+
+    "mirror":"SNP-3000",
+
+    "speaker": "SNP-W8",
+
+    "sound":[
+        {"err01":"사운드"},
+        {"err02":"마이크"}
     ],
 
-    "speaker":[
-        {
-            "subject": "블루투스스피커",
-            "goods": "SNP-W8",
-            "errCode": "작동"
-        }
-    ]
+    "nosis":[
+        {"err03":"작동"},
+        {"err04":"소음"}
+    ],
+    
+    "work":"작동"
 }
