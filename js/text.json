@@ -1,15 +1,46 @@
 {
-    "type":{
-            "list01":"빔프로젝터",
-            "list02":"이어폰",
-            "list03":"헤드셋",
-            "list04":"스피커",
-            "list05":"마이크",
-            "list06":"미러볼",
-            "list07":"거치대",
-            "list08":"모기퇴치기",
-            "list09":"선풍기",
-            "list10":"넥워머",
-            "list11":"가습기"
-    }
+    "earphone":[
+        {
+            "subject": "게이밍이어폰",
+            "goods01": "G9",
+            "goods02": "G9Plus",
+            "goods03": "G9Light",
+            "errCode01": "사운드",
+            "errCode02": "마이크"
+        } 
+    ],
+
+    "mosquito":[
+        {
+            "subject": "모기퇴치기",
+            "goods03": "M9",
+            "goods04": "M10",
+            "errCode03": "작동"
+        }
+    ],
+    
+    "mic":[
+        {
+            "subject": "블루투스마이크",
+            "goods05": "Musing",
+            "errCode04": "작동",
+            "errCode03": "소음"
+        }
+    ],
+
+    "mirror":[
+        {
+            "subject": "미러볼",
+            "goods06": "SNP-3000",
+            "errCode": "작동"
+        }
+    ],
+
+    "speaker":[
+        {
+            "subject": "블루투스스피커",
+            "goods07": "SNP-W8",
+            "errCode": "작동"
+        }
+    ]
 }
