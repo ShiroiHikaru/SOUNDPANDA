@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 지정하고 싶은 컬러는 이곳에서 저장합니다. */
+        :root{
+            --category: #000;
+            --col01: #375ff3;
+            --col02: rgb(245, 95, 20);
+            --col03: #d30c0c;
+            --bolder01 : 1px solid #fff;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container{
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+
+        .table-wrap{
+            width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .table-wrap > .flex-row{
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        .table-wrap > .flex-row > .flex-sheet{
+            width: calc(100% / 4);
+            height: 80px;
+            font-size: 0.9rem;
+            border-bottom: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        .table-wrap > .flex-row > .lightgrey{
+            background: #eee;
+        }
+
+        .table-wrap > .flex-row > .deepgrey{
+            background: #ddd;
+        }
+
+        .table-wrap > .flex-row >.category, .col01, .col02, .col03{
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .table-wrap > .flex-row > .col01{
+            background: var(--col01);
+        }
+
+        .table-wrap > .flex-row > .col02{
+            background: var(--col02);
+        }
+
+        .table-wrap > .flex-row > .col03{
+            background: var(--col03);
+        }
+
+        .table-wrap > .flex-row > .flex-sheet > .inner-sheet{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: calc(302px / 4);
+            height: 100%;
+            text-align: center;
+        }
+
+        
+        .table-wrap > .flex-row > .flex-sheet > .other-sheet{
+            width: calc(302px / 2);
+        }
+
+        .table-wrap > .flex-row > .flex-sheet > .incol{
+            border-right: 1px solid #ccc;
+        }
+
+        .table-wrap > .flex-row > .category{
+            background: var(--category);
+            border-bottom: var(--bolder01);
+            color: #fff;
+        }
+
+        
+   
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 안내테이블 시작 -->
+        <div class="table-wrap" role="table">
+            <div class="flex-row header" role="row-wrap">
+                <div class="flex-sheet category" role="cell"><p>서비스</p></div>
+                <div class="flex-sheet col01" role="cell"><p>판다케어</p></div>
+                <div class="flex-sheet col02" role="cell"><p>판다케어플러스</p></div>
+                <div class="flex-sheet col03" role="cell"><p>판다프라임플러스</p></div>
+            </div>
+            <div class="flex-row" role="row-wrap">
+                <div class="flex-sheet category"  role="cell">대상 상품</div>
+                <div class="flex-sheet lightgrey" role="cell">전 상품</div>
+                <div class="flex-sheet lightgrey" role="cell">루커빔 제외 모두</div>
+                <div class="flex-sheet lightgrey" role="cell">루커빔</div>
+            </div>
+            <div class="flex-row" role="row-wrap">
+                <div class="flex-sheet category" role="cell">대상 기간</div>
+                <div class="flex-sheet deepgrey" role="cell">30일</div>
+                <div class="flex-sheet deepgrey" role="cell">1년</div>
+                <div class="flex-sheet deepgrey" role="cell">1년</div>
+            </div>
+            <div class="flex-row" role="row-wrap">
+                <div class="flex-sheet category" role="cell">구분</div>
+                <div class="flex-sheet lightgrey"  role="cell">
+                    <div class="inner-sheet incol other-sheet" role="cell">교환</div>
+                    <div class="inner-sheet other-sheet" role="cell">반품</div>
+                </div>
+                <div class="flex-sheet lightgrey" role="cell">무상A/S</div>
+                <div class="flex-sheet lightgrey" role="cell">안심보험, 유상A/S</div>
+            </div>
+            <div class="flex-row" role="row-wrap">
+                <div class="flex-sheet category" role="cell">내용</div>
+                <div class="flex-sheet deepgrey"  role="cell">
+                    <div class="inner-sheet incol" role="cell">단순변심</div>
+                    <div class="inner-sheet incol" role="cell">불량</div>
+                    <div class="inner-sheet incol" role="cell">단순변심</div>
+                    <div class="inner-sheet " role="cell">불량</div>
+                </div>
+                <div class="flex-sheet deepgrey" role="cell">불량</div>
+                <div class="flex-sheet deepgrey" role="cell">불량</div>
+            </div>
+            <div class="flex-row" role="row-wrap">
+                <div class="flex-sheet category" role="cell">수리 비용</div>
+                <div class="flex-sheet lightgrey" role="cell">본사</div>
+                <div class="flex-sheet lightgrey" role="cell">본사</div>
+                <div class="flex-sheet lightgrey" role="cell">고객</div>
+            </div>
+            <div class="flex-row" role="row-wrap">
+                <div class="flex-sheet category" role="cell">배송 비용</div>
+                <div class="flex-sheet deepgrey" role="cell">
+                    <div class="inner-sheet incol" role="cell">본사</div>
+                    <div class="inner-sheet incol" role="cell">고객</div>
+                    <div class="inner-sheet incol" role="cell">본사</div>
+                    <div class="inner-sheet incol" role="cell">고객</div>
+                </div>
+                <div class="flex-sheet deepgrey" role="cell">본사</div>
+                <div class="flex-sheet deepgrey" role="cell">고객</div>
+            </div>
+            <div class="flex-row" role="row-wrap">
+                <div class="flex-sheet category" role="cell">택배접수</div>
+                <div class="flex-sheet lightgrey" role="cell">본사</div>
+                <div class="flex-sheet lightgrey" role="cell">고객</div>
+                <div class="flex-sheet lightgrey" role="cell">고객</div>
+            </div>
+        </div>
+        <!-- 안내테이블 끝 -->
+        <!-- 링크 버튼 시작 -->
+        <div class="table-linl-btn" role="rowgroup">
+            <div class="pandacare" role="button">판다 케어 접수하기</div>
+            <div class="pandacarePlus" role="banner">판다 케어 플러스 접수하기</div>
+        </div>
+        <!-- 링크 버튼 끝 -->
+    </div>
+</body>
+</html>
