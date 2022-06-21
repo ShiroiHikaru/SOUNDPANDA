@@ -2,36 +2,31 @@
     "earphone":[
         {
             "subject": "게이밍이어폰",
-            "goods01": "G9",
-            "goods02": "G9Plus",
-            "goods03": "G9Light",
-            "errCode01": "사운드",
-            "errCode02": "마이크"
+            "goods":["G9","G9Plus","G9Light"],
+            "err": ["사운드","마이크"]
         } 
     ],
 
     "mosquito":[
         {
             "subject": "모기퇴치기",
-            "goods03": "M9",
-            "goods04": "M10",
-            "errCode03": "작동"
+            "goods": ["M9","M10"],
+            "err": "작동"
         }
     ],
     
     "mic":[
         {
             "subject": "블루투스마이크",
-            "goods05": "Musing",
-            "errCode04": "작동",
-            "errCode03": "소음"
+            "goods": "Musing",
+            "err": ["작동", "소음"]
         }
     ],
 
     "mirror":[
         {
             "subject": "미러볼",
-            "goods06": "SNP-3000",
+            "goods": "SNP-3000",
             "errCode": "작동"
         }
     ],
@@ -39,7 +34,7 @@
     "speaker":[
         {
             "subject": "블루투스스피커",
-            "goods07": "SNP-W8",
+            "goods": "SNP-W8",
             "errCode": "작동"
         }
     ]

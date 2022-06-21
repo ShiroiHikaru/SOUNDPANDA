@@ -37,9 +37,14 @@
 <body>
     <!-- 전체 카테고리 항목(클릭 시 하위 메뉴 변경) -->
     <ul class="categori_tab">
-        <li>전체</li>
-        <li>사운드판다</li>
-        <li>판다지아</li>
+        <li>제품군</li>
+        <li>제품항목</li>
+        <li>제품증상</li>
     </ul>
+    <script type="text/javascript">
+        fetch('https://shiroihikaru.github.io/SOUNDPANDA/js/text.json')
+        .then(Response => Response.json())
+        .then(json=>console.log(json))
+    </script>
 </body>
 </html>
