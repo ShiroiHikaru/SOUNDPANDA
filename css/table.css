@@ -1,0 +1,116 @@
+      /* 지정하고 싶은 컬러는 이곳에서 저장합니다. */
+      :root{
+        --category: #000;
+        --col01: #375ff3;
+        --col02: rgb(245, 95, 20);
+        --col03: #d30c0c;
+        --bolder01 : 1px solid #fff;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .container{
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+
+    .table-wrap{
+        width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-wrap > .flex-row{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .table-wrap > .flex-row > .flex-sheet{
+        width: calc(100% / 4);
+        height: 80px;
+        font-size: 0.9rem;
+        border-bottom: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+
+    .table-wrap > .flex-row > .lightgrey{
+        background: #eee;
+    }
+
+    .table-wrap > .flex-row > .deepgrey{
+        background: #ddd;
+    }
+
+    .table-wrap > .flex-row >.category, .col01, .col02, .col03{
+        color: #fff;
+        font-weight: bold;
+    }
+
+    .table-wrap > .flex-row > .col01{
+        background: var(--col01);
+    }
+
+    .table-wrap > .flex-row > .col02{
+        background: var(--col02);
+    }
+
+    .table-wrap > .flex-row > .col03{
+        background: var(--col03);
+    }
+
+    .table-wrap > .flex-row > .flex-sheet > .inner-sheet{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(302px / 4);
+        height: 100%;
+        text-align: center;
+    }
+
+    
+    .table-wrap > .flex-row > .flex-sheet > .other-sheet{
+        width: calc(302px / 2);
+    }
+
+    .table-wrap > .flex-row > .flex-sheet > .incol{
+        border-right: 1px solid #ccc;
+    }
+
+    .table-wrap > .flex-row > .category{
+        background: var(--category);
+        border-bottom: var(--bolder01);
+        color: #fff;
+    }
+
+    .table-link-btn{
+        width: 1000px;
+        height: 50px;
+        margin: 50px 0;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .table-link-btn > div{
+        width: calc(100% / 2.05);
+        border: 1px solid green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: red;
+        border-radius: 50px;
+    }
+
+    .table-link-btn > .pandacare{
+        background: yellow;
+    }
