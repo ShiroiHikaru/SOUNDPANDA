@@ -37,14 +37,35 @@
 <body>
     <!-- 전체 카테고리 항목(클릭 시 하위 메뉴 변경) -->
     <ul class="categori_tab">
-        <li>제품군</li>
+        <li>
+            제품군
+            <ul>
+                <li class="subtitle"></li>
+                <li class="subtitle"></li>
+                <li class="subtitle"></li>
+                <li class="subtitle"></li>
+                <li class="subtitle"></li>
+            </ul>
+        </li>
         <li>제품항목</li>
         <li>제품증상</li>
     </ul>
     <script type="text/javascript">
-        fetch('https://shiroihikaru.github.io/SOUNDPANDA/js/text.json')
-        .then(Response => Response.json())
-        .then(json=>console.log(json))
+        $(document).ready(function(){
+            $.ajax({
+                url:"https://shiroihikaru.github.io/SOUNDPANDA/js/text.json",
+                dataType:"json",
+                success:function(data){
+                    if(data.length>0){
+                        let li = $("</li>");
+
+                        for(let i in data){
+                            let $
+                        }
+                    }
+                }
+            })
+        });
     </script>
 </body>
 </html>

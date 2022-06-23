@@ -1,5 +1,9 @@
 /* font family */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+:root{
+    --line: 1px solid #333;
+    --boldline: 3px solid #333;
+}
 
 *{
     margin: 0;
@@ -113,102 +117,73 @@ strong{
     cursor: pointer;
 }
 
-/* 카테고리 공통영역 */
-.categori{
-    width: 715px;
-    height: 50px;
-    position: absolute;
-    left: 35px;
-    bottom: 20px;
+/* as 선택 */
+.dropmenu{
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
-}
-
-/* 카테고리 항목선택 */
-.categori .goods .listup{
-    border-width: 1px 1px 3px 1px;
-    border-style: solid;
-    border-color: #333;
-}
-
-.categori .goods .listup{
-    width: 230px;
+    width: 715px;
     height: 50px;
-    display: block;
-    font-size: 15px;
-    text-decoration: none;
-    color: #333;
+    margin: auto;
+    position: relative;
+    padding-top: 40px;
+}
+
+.dropmenu .dropbox{
+    width: calc(715px / 3.05);
+    border-top: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.dropmenu .dropbox .cellbox{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    border-top: var(--line);
+    border-right: var(--line);
+    border-bottom: var(--boldline);
+    border-left: var(--line);
+}
+
+.dropmenu .dropbox .cellbox p{
     font-size: 18px;
     line-height: 50px;
-    font-weight: bold;
+    color: #333;
 }
 
-.categori .goods .listup::after{
-    content: "▼";
+.dropmenu .dropbox .cellbox button{
+    width:50px;
+    border: none;
     background: #333;
     color: #fff;
-    width: 50px;
-    height: 50px;
-    border: 1px solid red;
-    text-align: center;
-    position: absolute;
-    right: 0px;
-    margin-left: 10px;
-}
-
-.categori .goods .hidden_list{
-    background: #fff;
-    width: 230px;
-    height: 60px;
-    border: 1px solid #333;
-    overflow-y: scroll;
-    display: none;
-}
-
-.categori .goods .hidden_list li{
-    font-size: 15px;
-    height: 40px;
-    line-height: 40px;
-    border-bottom: 1px solid #333;
-    padding-left: 10px;
-}
-
-/* 제품타입선택 */
-.categori .goods .type{
-    width: 715px;
-    height: 95px;
-    position: absolute;
-    bottom: 0px;
-}
-
-.categori .goods .type li{
-    width: 125px;
-    height: 25px;
-    border: 1px solid #333;
-    border-radius: 50px;
-    font-size: 15px;
-    float: left;
-    margin: 0px 10px 10px 0px;
-    text-align: center;
-}
-
-.categori .goods .type li a:hover{
-    background: #333;
-    color: #fff;
-    transition: 0.2s;
     cursor: pointer;
 }
 
-.categori .goods .type li a{
-    display: inline-block;
-    border-radius: 50px;
-    width: 125px;
-    height: 25px;
-    line-height: 25px;
-    text-decoration: none;
-    color: #333;
-    padding: 0;
-    margin: 0;
+.dropmenu .dropbox .listchat{
+    display: flex;
+    width: calc(715px / 3.05);
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    z-index: 200;
+    background: #fff;
+    border: var(--line);
 }
 
+.dropmenu .dropbox .listchat ul{
+    display: none;
+}
+
+.dropmenu .dropbox .listchat a{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: var(--line);
+    display: block;
+}
+
+.show{
+    display: block;
+}
