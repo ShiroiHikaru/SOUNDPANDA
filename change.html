@@ -12,23 +12,38 @@
         }
     </style>
         <script type="text/javascript">
-            $(document).ready(function(){
-                $("#directBtn").click(function(){
-                    $(".title .test1 span").text("2년 무상 A/S를 받아보세요");
-                });
-                $("#directBtn").click(function(){
-                    $(".title .test2 span").text("1:1문의 사항을 남겨보세요.");
-                });
-            });
+          function change01(){
+            document.getElementById("title").innerHTML = "직접 사용 해 보고 결정할 수 있는<br><strong>사운드판다의 다양한 서비스를</strong>경험하세요";
+          };
+
+          function change02(){
+            document.getElementById("title").innerHTML = "구매하신 제품을 등록하고<br><strong>최대 2년간 무상 A/S</strong>받으세요";
+          };
+
+          function change03(){
+            document.getElementById("title").innerHTML = "1:1문의 남기신 후<br><strong>원하시는 답변 방법을 선택</strong>하세요";
+          };
         </script>
 </head>
 <body>
-    <div class="title">
-        <p>직접 사용해 보고 결정할 수 있는</p><br>
-        <em class="test1 test2"><span>사운드판다의 다양한 서비스를 경험하세요.</span></em>
+    <div class="rightBox">
+        <p id="title" class="title">
+        </p>
+        <ul class="benefitList">
+            <li class="on">
+                <button type="button" id="change01" data-link="/shopinfo/as.html" onclick="change01()">나의 A/S 서비스</button>
+            </li>
+            <li class="">
+                <button type="button" id="change02" data-link="/shopinfo/as.html" onclick="change02()">안심보험 등록</button>
+            </li>
+            <li class="">
+                <button type="button" id="change03" data-link="/sheetform/form.html" onclick="change01()">1:1문의</button>
+            </li>
+        </ul>
+        <a href="/sheetform/care.html" class="directBtn">
+            <span>바로가기</span>
+        </a>
     </div>
-    <button type="button" id="directBtn">
-        <a href="#"><span>바로가기</span></a>
-    </button>
+    
 </body>
 </html>
